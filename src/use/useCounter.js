@@ -6,7 +6,7 @@ const counterData = reactive({
 });
 const appTitleRef = ref(null);
 
-export function useCounter() {
+export const useCounter = () => {
   watch(
     () => counterData.count,
     (newCount) => {
